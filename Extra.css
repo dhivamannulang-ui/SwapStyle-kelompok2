@@ -1,0 +1,107 @@
+/* ============================================================
+   SwapStyle — extra.css
+   Layout tambahan untuk halaman terpisah (bukan modal) hasil
+   pemisahan dari script.js. Class di file ini HANYA untuk
+   struktur/posisi; warna, font, tombol dsb tetap pakai style.css.
+   ============================================================ */
+
+/* ============ AUTH (Daftar / Masuk) ============ */
+.auth-page {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+.auth-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-m);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+}
+.auth-title { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin: 10px 0 6px; }
+.auth-sub { color: var(--text-muted); font-size: .92rem; margin: 0 0 26px; }
+.auth-form .form-field:last-of-type { margin-bottom: 14px; }
+.auth-row { display: flex; align-items: center; justify-content: space-between; margin: -6px 0 18px; font-size: .85rem; }
+.auth-link { color: var(--accent); font-weight: 600; }
+.auth-submit { width: 100%; }
+.auth-switch { text-align: center; margin-top: 20px; font-size: .85rem; color: var(--text-muted); }
+.auth-switch a { color: var(--accent); font-weight: 600; }
+
+/* ============ DETAIL PRODUK (full page) ============ */
+.detail-page-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 48px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.detail-page-grid .detail-photo { aspect-ratio: 1/1; margin-bottom: 0; }
+.breadcrumb { max-width: 1280px; margin: 18px auto 0; padding: 0 48px; font-size: .82rem; color: var(--text-muted); }
+.breadcrumb a { color: var(--text-muted); }
+.breadcrumb a:hover { color: var(--primary); }
+.detail-actions { display: flex; gap: 10px; margin: 18px 0; }
+.detail-actions .btn-outline, .detail-actions .btn-primary { flex: 1; }
+.detail-seller { margin-top: 22px; }
+.detail-seller .btn-outline { margin-left: auto; width: auto; padding: 9px 16px; font-size: .82rem; }
+
+/* ============ CART (full page) ============ */
+.cart-page-layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px 48px 64px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.cart-page-layout .cart-list { max-height: none; overflow: visible; }
+.cart-page-layout .cart-item-photo { width: 76px; height: 76px; }
+.cart-summary-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-l); padding: 24px; position: sticky; top: 90px; }
+.cart-summary-box h3 { font-family: var(--font-display); margin: 0 0 16px; font-size: 1.15rem; }
+
+/* ============ CHECKOUT (full page) ============ */
+.checkout-page-layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px 48px 64px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.checkout-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-l); padding: 24px; margin-bottom: 20px; }
+.checkout-block h3 { font-family: var(--font-display); margin: 0 0 16px; font-size: 1.1rem; }
+.checkout-summary-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-l); padding: 24px; position: sticky; top: 90px; }
+.checkout-summary-box h3 { font-family: var(--font-display); margin: 0 0 16px; font-size: 1.15rem; }
+textarea {
+  width: 100%; padding: 11px 14px; border-radius: var(--radius-s);
+  border: 1px solid var(--border); background: var(--surface-2);
+  font-family: inherit; font-size: .92rem; color: var(--text); resize: vertical;
+}
+textarea:focus { outline: none; border-color: var(--primary); background: var(--surface); }
+
+/* ============ ORDERS (full page) ============ */
+.orders-page-list { max-width: 900px; margin: 0 auto; padding: 8px 48px 64px; }
+
+/* ============ SELLER DASHBOARD (full page extras) ============ */
+.dash-form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 16px; }
+.dash-form-grid .form-field.full { grid-column: 1 / -1; }
+select {
+  width: 100%; padding: 11px 14px; border-radius: var(--radius-s);
+  border: 1px solid var(--border); background: var(--surface-2);
+  font-family: inherit; font-size: .92rem; color: var(--text);
+}
+
+/* ============ PROFILE (full page) ============ */
+.profile-header { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+.profile-header .seller-avatar { width: 64px; height: 64px; font-size: 1.2rem; }
+.profile-header .btn-primary { margin-left: auto; }
+.profile-name { font-weight: 700; font-size: 1.15rem; display: flex; align-items: center; gap: 8px; margin: 0; }
+.profile-form-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-l); padding: 26px; max-width: 560px; }
+.profile-form-card h3 { font-family: var(--font-display); margin: 0 0 18px; font-size: 1.1rem; }

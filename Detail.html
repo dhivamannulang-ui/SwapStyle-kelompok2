@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwapStyle – Detail Produk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <img src="img/logo.png" alt="SwapStyle Logo" class="logo-img" />
+      <div>
+        <span class="logo-text">SwapStyle</span>
+        <span class="logo-sub">Sustainable Fashion for Students</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#produk">Jelajahi</a></li>
+      <li><a href="index.html#pembayaran">Pembayaran</a></li>
+      <li><a href="index.html#tentang">Tentang</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="icon-btn" href="orders.html">📦</a>
+      <a class="icon-btn" href="cart.html">🛒</a>
+      <a class="btn-outline" href="register.html">Daftar</a>
+      <a class="btn-primary" href="login.html">Masuk</a>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Beranda</a> / <a href="index.html#produk">Kemeja</a> / <span>Kemeja Oxford</span>
+  </div>
+
+  <!-- ===== DETAIL PRODUK (dari tplDetail) ===== -->
+  <section class="detail-page-grid">
+    <div class="detail-photo">
+      <img src="img/Kemeja Oxford.jpg" alt="Kemeja Oxford" onerror="this.style.opacity=0" />
+    </div>
+
+    <div>
+      <p class="modal-title" style="margin-bottom:2px;">Kemeja Oxford</p>
+      <div class="detail-price-row">
+        <span class="detail-price">Rp 75.000</span>
+        <span class="detail-cond">Sangat Baik</span>
+      </div>
+      <p class="detail-desc">Oxford polos serbaguna, enak dipakai formal maupun kasual. Bahan katun lembut, tidak mudah kusut.</p>
+
+      <div class="form-field">
+        <label>Pilih Ukuran</label>
+        <div class="choice-group" data-detail-size>
+          <span class="choice-chip" data-val="S">S</span>
+          <span class="choice-chip active" data-val="M">M</span>
+          <span class="choice-chip" data-val="L">L</span>
+          <span class="choice-chip" data-val="XL">XL</span>
+        </div>
+      </div>
+
+      <div class="detail-actions">
+        <a href="cart.html" class="btn-outline">+ Keranjang</a>
+        <a href="payment.html" class="btn-primary">Beli Sekarang</a>
+      </div>
+
+      <div class="seller-card detail-seller">
+        <div class="seller-avatar">SF</div>
+        <div class="seller-info">
+          <p class="seller-name">Sari F. <span class="badge-verified">✓</span></p>
+          <p class="seller-meta">⭐ 4.9 · 124 terjual</p>
+        </div>
+        <button class="btn-outline">💬 Chat</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="img/logo.png" alt="SwapStyle" class="logo-img" />
+      <span>SwapStyle</span>
+    </div>
+    <p class="footer-copy">© 2025 SwapStyle – Sustainable Fashion for Students. Dibuat dengan ❤️ oleh Tim SwapStyle.</p>
+    <div class="footer-links">
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat &amp; Ketentuan</a>
+      <a href="#">Hubungi Kami</a>
+    </div>
+  </footer>
+
+</body>
+</html>

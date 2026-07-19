@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwapStyle – Masuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR (ringkas) ===== -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <img src="img/logo.png" alt="SwapStyle Logo" class="logo-img" />
+      <div>
+        <span class="logo-text">SwapStyle</span>
+        <span class="logo-sub">Sustainable Fashion for Students</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a class="btn-outline" href="register.html">Daftar</a>
+    </div>
+  </nav>
+
+  <!-- ===== MASUK (dari tplMasuk) ===== -->
+  <section class="auth-page">
+    <div class="auth-card">
+      <p class="modal-title" style="font-size:1.6rem;">Selamat Datang Kembali</p>
+      <p class="modal-sub">Masuk untuk melanjutkan jual-beli kamu.</p>
+
+      <form class="auth-form" id="formMasuk">
+        <div class="form-field">
+          <label for="mEmail">Email</label>
+          <input id="mEmail" type="email" placeholder="nama@kampus.ac.id" required />
+        </div>
+        <div class="form-field">
+          <label for="mPass">Kata Sandi</label>
+          <input id="mPass" type="password" placeholder="Kata sandi" required />
+        </div>
+        <button type="submit" class="btn-primary">Masuk</button>
+      </form>
+
+      <p class="auth-switch">Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+    </div>
+  </section>
+
+</body>
+</html>

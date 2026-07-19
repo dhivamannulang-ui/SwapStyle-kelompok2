@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwapStyle – Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <img src="img/logo.png" alt="SwapStyle Logo" class="logo-img" />
+      <div>
+        <span class="logo-text">SwapStyle</span>
+        <span class="logo-sub">Sustainable Fashion for Students</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a class="icon-btn" href="cart.html">🛒</a>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="section-header">
+      <h2 class="section-title">Checkout</h2>
+    </div>
+    <!-- step indicator (dari tplStepper) -->
+    <div class="checkout-steps" style="max-width:1280px; margin:0 auto 8px;">
+      <div class="checkout-step done"></div>
+      <div class="checkout-step active"></div>
+      <div class="checkout-step"></div>
+    </div>
+  </section>
+
+  <div class="checkout-page-layout">
+    <div>
+
+      <!-- Step 1: Alamat (dari renderCheckoutAddress) -->
+      <div class="checkout-block">
+        <h3>Alamat Pengiriman</h3>
+        <form>
+          <div class="form-field">
+            <label for="addrName">Nama Penerima</label>
+            <input id="addrName" type="text" placeholder="Nama lengkap" />
+          </div>
+          <div class="form-field">
+            <label for="addrPhone">Nomor HP</label>
+            <input id="addrPhone" type="tel" placeholder="08xxxxxxxxxx" />
+          </div>
+          <div class="form-field">
+            <label for="addrFull">Alamat Lengkap</label>
+            <input id="addrFull" type="text" placeholder="Jalan, nomor rumah, RT/RW" />
+          </div>
+          <div class="form-field">
+            <label for="addrCity">Kota / Kabupaten</label>
+            <input id="addrCity" type="text" placeholder="Contoh: Batam" />
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 2: Metode Pembayaran (dari renderCheckoutPayment) -->
+      <div class="checkout-block">
+        <h3>Metode Pembayaran</h3>
+        <div class="choice-group" style="margin-bottom:18px;" data-method-group>
+          <span class="choice-chip active" data-val="DANA">📱 DANA</span>
+          <span class="choice-chip" data-val="ATM">🏧 Transfer ATM/Bank</span>
+        </div>
+
+        <!-- Field DANA (tampil kalau DANA dipilih) -->
+        <div class="form-field">
+          <label for="danaPhone">Nomor DANA</label>
+          <input id="danaPhone" type="tel" placeholder="08xxxxxxxxxx" />
+        </div>
+
+        <!-- Field ATM (referensi, tampil kalau ATM dipilih) -->
+        <!--
+        <div class="form-field">
+          <label>Pilih Bank</label>
+          <div class="bank-select-grid">
+            <span class="bank-option active">BRI</span>
+            <span class="bank-option">Mandiri</span>
+            <span class="bank-option">BNI</span>
+            <span class="bank-option">BCA</span>
+            <span class="bank-option">BSI</span>
+            <span class="bank-option">CIMB Niaga</span>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="atmAccount">Nomor Rekening</label>
+          <input id="atmAccount" type="text" placeholder="Nomor rekening tujuan" />
+        </div>
+        -->
+
+        <p class="form-note" style="text-align:left; margin-top:14px;">🔒 Dana ditahan aman sampai barang kamu terima</p>
+      </div>
+
+    </div>
+
+    <aside class="checkout-summary-box">
+      <h3>Ringkasan Pembayaran</h3>
+      <div class="pay-summary" style="margin-bottom:16px;">
+        <div class="pay-summary-row"><span>Subtotal</span><span>Rp 185.000</span></div>
+        <div class="pay-summary-row"><span>Total</span><span>Rp 185.000</span></div>
+      </div>
+      <a href="orders.html" class="btn-primary" style="width:100%;">Bayar Sekarang</a>
+    </aside>
+  </div>
+
+</body>
+</html>
